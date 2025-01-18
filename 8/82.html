@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>prime</title>
+	<script type="text/javascript">
+		function prime()
+		{
+			var num = Number(document.getElementById('input1').value);
+			var no = Number(document.getElementById('input2').value);
+			document.write("This are prime numbers::<br/>");
+			for(let i=num;i<=no;i++)
+			{
+				if(i%2!==0)
+				{
+					document.write(i+"<br/>");
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+	<input type="text" id="input1" name="inpuut">
+	<input type="text" id="input2" name="inpuut2">
+<button onclick="prime()">click</button>
+</body>
+</html>
