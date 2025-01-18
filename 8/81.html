@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>factors</title>
+	<script type="text/javascript">
+		function factors()
+		{
+			var num = Number(document.getElementById('input1').value);
+			for(let i=1;i<=num;i++)
+			{
+				if(num%i==0)
+				{
+					document.write(i+":is factor number");
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+	<input type="text" id="input1" name="inpuut">
+<button onclick="factors()">click</button>
+</body>
+</html>

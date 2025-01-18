@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>prime</title>
+	<script type="text/javascript">
+		function gcd()
+		{
+			var num = Number(document.getElementById('input1').value);
+			var no = Number(document.getElementById('input2').value);
+			for(let i=num;i>0;i--)
+			{
+				if(num%i==0 && no%i==0)
+				{
+					document.write("<br/>");
+				}
+				document.write(i+"::is GCD no"+"<br/>");
+			}
+			for(let j=no;j>0;j--)
+			{
+				if(no%j!==0 && num%j!==0)
+				{
+					document.write("<br/>");
+				}
+					document.write(j+"::is not"+"<br/>");
+			}
+		}
+	</script>
+</head>
+<body>
+	<input type="text" id="input1" name="inpuut">
+	<input type="text" id="input2" name="inpuut2">
+<button onclick="gcd()">click</button>
+</body>
+</html>

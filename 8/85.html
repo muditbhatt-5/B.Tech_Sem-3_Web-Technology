@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2 no</title>
+	<script type="text/javascript">
+		function twono(){
+		var no = Number(document.getElementById('input1').value);
+		var value2 = no / 10;
+		var value1 = no % 10;
+		var value3 = value2;
+		for(let i=value2;i<=value1;i++)
+		{
+			value3 = value3*value2;
+		}
+			document.write("Value is::"+value3);
+	}
+	</script>
+</head>
+<body>
+	<input type="text" id="input1" name="value1">
+<button onclick="twono()">click</button>
+</body>
+</html>
