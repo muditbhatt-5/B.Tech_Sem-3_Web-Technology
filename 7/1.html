@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+    <script type="text/javascript">
+       function calculator() {
+        var value1 = parseFloat(prompt("enter value 1"));
+        var value2 = parseFloat(prompt("enter value 2"));
+        var op = prompt("choose any one +,-,/,*");
+        var result;
+        switch (op) {
+            case '+':
+                result = value1 + value2;
+                break;
+            case '-':
+                result = value1 - value2;
+                break;
+            case '*':
+                result = value1 * value2;
+                break;
+            case '/':
+                result = value1 / value2;
+                break;
+            default:
+                result = "invalid value";
+        }
+        alert("result:"+result);
+       }
+    </script>
+</head>
+<body>
+    <button onclick="calculator()">cal</button>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>palinedrom</title>
+	<script type="text/javascript">
+		function palinedrom()
+		{
+			var x = parseInt(document.getElementById('text').value);
+			var y,sum=0;
+			var temp=x;
+			while(x>0)
+			{
+				y=x%10;
+				sum=(sum*10)+y;
+				x = parseInt(x/10);
+			}
+			if(sum===temp)
+			{
+				alert("Number is palinedrom:)");
+			}
+			else 
+			{
+				alert("it is not palinedrom");
+			}
+		}
+	</script>
+</head>
+<body>
+	<input id="text" name="text"
+	type="text">
+<button onclick="palinedrom()">palinedrom</button>
+<p id="p1"></p>
+</body>
+</html>
