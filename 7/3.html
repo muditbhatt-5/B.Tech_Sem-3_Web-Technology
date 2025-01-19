@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>fact</title>
+	<script type="text/javascript">
+		function btn()
+		{
+			var no = parseInt(document.getElementById('value1').value);
+			let result=1;
+			for(i=1;i<=no;i++)
+			{
+				result = result*i;
+			}
+			alert("ans:"+result);
+		}
+	</script>
+</head>
+<body>
+	<input id="value1" type="text" name="value1">
+	<button onclick="btn()">Click</button>
+</body>
+</html>
